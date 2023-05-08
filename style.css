@@ -8,9 +8,18 @@ body {
   h2 {
     margin-left: 540px;
   }
+  h3 {
+    margin-left: 250px;
+  }
   p {
     margin-left: 40px;
   }
 #login {
   margin-left: 430px;
+}
+ul {
+  margin-left: 500px;
+}
+footer {
+  margin-left: 500px;
 }
