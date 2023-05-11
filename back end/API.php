@@ -1,7 +1,7 @@
 <?php
 
 // Set the database credentials
-$servername = "";
+$servername = "Localhost:3306";
 $username = "";
 $password = "";
 $dbname = "";
