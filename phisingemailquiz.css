@@ -11,3 +11,9 @@ h3
     margin-left: 260px;
     margin-top: 70px;
 }
+img {
+    float: center;
+    width: 500px;
+    margin-left: 700px;
+    margin-top: -250px;
+}
