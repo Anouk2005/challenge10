@@ -26,7 +26,7 @@
             if($result->rowCount() > 0) {
                 echo "Login successful";
                 $_SESSION['username'] = $username;
-                header("Location: home.php");
+                header("Location: menu.html");
             } else {
                 echo "Login failed";
             }
