@@ -8,7 +8,7 @@
 	<header>
 		<h1>Internetveiligheid voor ouderen</h1>
 	</header>
-	
+<div id=mainindex>	
 	<main>
 		<section>
 			<h2>Wat is internetveiligheid?</h2>
@@ -32,7 +32,7 @@
 	
 		</section>
 	</main>
-	
+</div>
 	<footer>
 		<p>&copy; 2023</p>
 	</footer>
