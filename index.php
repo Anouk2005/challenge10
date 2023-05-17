@@ -1,37 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <?php include_once("inc.db.php"); ?>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<title>Internetveiligheid voor ouderen</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Create login form --> 
-    <form action="index.php" method="post">
-        <label for="username">Username</label>
-        <input type="text" name="username" id="">
-        <label for="password">Password</label>
-        <input type="password" name="password" id="">
-        <input type="submit" value="Login">
-    </form>
-    <!-- Check if log in is correct --> 
-    <?php
-        if(isset($_POST['username']) && isset($_POST['password'])) {
-            $username = $_POST['username'];
-            $password = $_POST['password'];
-            $sql = "SELECT * FROM login WHERE username = '$username' AND password = '$password'";
-            $result = $conn->query($sql);
-            if($result->rowCount() > 0) {
-                echo "Login successful";
-                $_SESSION['username'] = $username;
-                header("Location: index.php");
-            } else {
-                echo "Login failed";
-            }
-        }
-        echo $_SESSION['username'];
-        ?>
+	<header>
+		<h1>Internetveiligheid voor ouderen</h1>
+	</header>
+	
+	<main>
+		<section>
+			<h2>Wat is internetveiligheid?</h2>
+			<p>Internetveiligheid verwijst naar de maatregelen die worden genomen om gebruikers te beschermen tegen online bedreigingen zoals virussen, phishing en hacking.</p>
+		</section>
+		
+		<section>
+			<h2>Waarom is internetveiligheid belangrijk?</h2>
+			<p>Internetveiligheid is belangrijk omdat het gebruikers beschermt tegen verlies van persoonlijke gegevens, identiteitsdiefstal en andere online gevaren. Het helpt ook om ervoor te zorgen dat online transacties en communicatie veilig en betrouwbaar zijn.</p>
+		</section>
+		
+		<section>
+			<h2>Hoe kan ik mijn internetveiligheid verbeteren?</h2>
+
+			<p>- Gebruik sterke wachtwoorden en verander ze regelmatig.</p>
+			<p>- Vermijd het delen van persoonlijke informatie online.</p>
+			<p>- Klik niet op verdachte links of bijlagen in e-mails.</p>
+			<p>- Gebruik antivirussoftware en houd deze up-to-date.</p>
+			<p>- Meld verdachte activiteiten of inbreuken op de beveiliging.</p>
+			
+	
+		</section>
+	</main>
+	
+	<footer>
+		<p>&copy; 2023</p>
+	</footer>
+
+	<div id="login">
+		<h3>Inloggen</h3>
+		<!--<form>
+			<label for="username">Gebruikersnaam:</label>
+			<input type="text" id="username" name="username" required>
+			<label for="password">Wachtwoord:</label>
+			<input type="password" id="password" name="password" required>
+			<input type="submit" value="Inloggen">
+		</form>-->
+		<?php include_once 'login.php'; ?>
+		Nog geen account? <a href="register.php">Registreer hier</a>
+	</div>
 </body>
 </html>
