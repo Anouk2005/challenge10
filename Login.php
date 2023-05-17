@@ -26,7 +26,11 @@
             if($result->rowCount() > 0) {
                 echo "Login successful";
                 $_SESSION['username'] = $username;
+<<<<<<< Updated upstream
                 header("Location: menu.html");
+=======
+                header("Location: home.php");
+>>>>>>> Stashed changes
             } else {
                 echo "Login failed";
             }

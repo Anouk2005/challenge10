@@ -8,7 +8,11 @@
 	<header>
 		<h1>Internetveiligheid voor ouderen</h1>
 	</header>
+<<<<<<< Updated upstream
 <div id=mainindex>	
+=======
+	
+>>>>>>> Stashed changes
 	<main>
 		<section>
 			<h2>Wat is internetveiligheid?</h2>
@@ -32,7 +36,11 @@
 	
 		</section>
 	</main>
+<<<<<<< Updated upstream
 </div>
+=======
+	
+>>>>>>> Stashed changes
 	<footer>
 		<p>&copy; 2023</p>
 	</footer>
